@@ -89,7 +89,7 @@ deploy:
   local_dir: build/web
 ```
 
-By default Travis pushes the files to `gh-pages` branch of the repository that triggered the pipeline build. You can configure the deploy to other branch or repository using the `repo` and `target_branch` keys. Take in consideration that if your want to modify the repository to be deployed, you need to include the username of the repository owner (`<repo_owner>/<repo_to_deploy>`). Another cool feature which Travis provides is the set of the custom domain to be used on Github Pages. This is done by modifying the value of `fqdn`.
+By default Travis pushes the files to `gh-pages` branch of the repository that triggered the pipeline build. You can configure the deploy to other branch or repository using the `repo` and `target_branch` keys. Take in consideration that if your want to modify the repository to be deployed, you need to include the username of the repository owner (`<repo_owner>/<repo_to_deploy>`). Another cool feature which Travis provides is the set of the custom domain to be used on Github Pages. This is done by modifying the value of `fqdn`. See all the other cool features that Travis provides [here](https://docs.travis-ci.com/user/deployment/pages/).
 
 
 Thats all, trigger a push/pull request on the build branch and Travis will deploy your Flutter application! Best part ? It's all free!
