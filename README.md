@@ -52,7 +52,7 @@ distro: bionic
 
 ### Build Phase
 
-Before building the application, Travis needs have Flutter setup in the machine. One of the ways this can be performed is by defining this setup as steps to be run **before** the build script:
+Before building the application, Travis needs to have Flutter setup in the machine. One of the ways this can be performed is by defining this setup as steps to be run **before** the build script:
 
 ```
 before_script:
@@ -75,7 +75,7 @@ This command creates all necessary files to represent a Flutter application as a
 Travis already provides support to deploy to Github Pages, using the [`deploy`](https://docs.travis-ci.com/user/deployment/pages/) job, and we only need to configure it for our workflow. The essential configuration is the following:
 
 - `provider` in deploy job as `pages`. By doing so, Travis will recognize that a deploy in Github Pages needs to be done.
-- `skip_cleanup` must be true, or else Travis will delete all files created in the build, which prevents to deploy of the static files generated in the application build. 
+- `skip_cleanup` must be true, or else Travis will delete all files created in the build, which prevents the deploy of the static files generated in the application build. 
 - `github_token` a [personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) with read and write permissions of the repository which will serve the Github Pages static files. Once you obtain the token, define it as an environment variable in Travis pipeline settings.
 - `keep_history` decides to keep the history of the branch in which the files will be pushed to (if set to true, history is kept, otherwise Travis performs a force push).
 - `local_dir` the relative path from the pipeline build workspace to the directory in which the static files to be deployed are located.
