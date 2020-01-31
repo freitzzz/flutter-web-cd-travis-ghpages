@@ -95,3 +95,14 @@ By default Travis pushes the files to `gh-pages` branch of the repository that t
 Thats all, trigger a push/pull request on the build branch and Travis will deploy your Flutter application! Best part? It's all free!
 
 You can see the live version of the classic Flutter Counter [here](https://freitzzz.dev/flutter-web-cd-travis-ghpages).
+
+
+## References and Acknowledgments
+
+The write of this guide was possible and inspired by the following guides / documentation:
+
+- https://flutter.dev/docs/get-started/web
+- https://flutter.dev/docs/development/platform-integration/web
+- https://docs.travis-ci.com/user/deployment/pages
+- https://medium.com/apolloblog/automatically-build-your-flutter-apps-with-travis-ci-4c1e47a5ae69
+- https://github.com/flutter/samples/blob/master/.travis.yml
