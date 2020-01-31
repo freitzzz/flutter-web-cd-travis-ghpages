@@ -8,7 +8,7 @@
 
 ### Workflow
 
-Before setting up the pipeline on Travis and creating the Flutter Web application, it is necessary to decide which branching model is to be adopted as this decision influences the pipeline design. As this example serves as a guide on how to integrate Flutter Web and TravisCI, a single branch model (Trunk Based Development) will be used.
+Before setting up the pipeline on Travis and creating the Flutter Web application, it is necessary to decide which branching model is to be adopted as this decision influences the pipeline design. As this example serves as a guide on how to integrate Flutter Web and Travis CI, a single branch model (Trunk Based Development) will be used.
 
 ### Flutter Web
 
@@ -92,4 +92,6 @@ deploy:
 By default Travis pushes the files to `gh-pages` branch of the repository that triggered the pipeline build. You can configure the deploy to other branch or repository using the `repo` and `target_branch` keys. Take in consideration that if your want to modify the repository to be deployed, you need to include the username of the repository owner (`<repo_owner>/<repo_to_deploy>`). Another cool feature which Travis provides is the set of the custom domain to be used on Github Pages. This is done by modifying the value of `fqdn`. See all the other cool features that Travis provides [here](https://docs.travis-ci.com/user/deployment/pages/).
 
 
-Thats all, trigger a push/pull request on the build branch and Travis will deploy your Flutter application! Best part ? It's all free!
+Thats all, trigger a push/pull request on the build branch and Travis will deploy your Flutter application! Best part? It's all free!
+
+You can see the live version of the classic Flutter Counter [here](https://freitzzz.dev/flutter-web-cd-travis-ghpages).
